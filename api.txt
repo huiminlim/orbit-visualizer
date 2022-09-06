@@ -1,1 +1,2 @@
 https://celestrak.org/NORAD/elements/gp.php?NAME=GALASSIA&FORMAT=TLE
+https://celestrak.org/NORAD/elements/gp.php?GROUP=planet&FORMAT=tle
