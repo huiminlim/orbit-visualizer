@@ -45,7 +45,7 @@ class TLE:
         self.revolution_at_epoch = revolution_at_epoch
 
     @classmethod
-    def parse(cls, tle1: str, tle2: str):
+    def parse(cls, name: str, tle1: str, tle2: str):
 
         # Parse tle1
 
@@ -62,9 +62,11 @@ if __name__ == "__main__":
         print("TLE request failed... Exiting...")
         exit(1)
 
+    name = r.json()["name"]
     tle1 = r.json()["tle1"]
     tle2 = r.json()["tle2"]
-    print(f"tle1: {tle1}")
-    print(f"tle2: {tle2}")
+    print(f"{name}")
+    print(f"\t{tle1}")
+    print(f"\t{tle2}")
 
-    tle = TLE.parse(tle1, tle2)
+    tle = TLE.parse(name, tle1, tle2)
