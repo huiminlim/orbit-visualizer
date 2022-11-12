@@ -50,6 +50,7 @@ class TLE:
     class TLE1_Index(IntEnum):
         LINE = 0
         SATELLITE_CATALOG_NUM = 1
+        CLASSIFICATION = 1
         INTL_DESIGNATOR = 2
         EPOCH_JULIAN_YEAR_DAY_FRACTION = 3
         FIRST_DERIV_MEAN_MOTION = 4
@@ -75,7 +76,8 @@ class TLE:
 
         # Tokenize tle1
         tle1_tokens = tle1.split()
-        sat_num = tle1_tokens[TLE.TLE1_Index.SATELLITE_CATALOG_NUM]
+        sat_num = tle1_tokens[TLE.TLE1_Index.SATELLITE_CATALOG_NUM][:-1]
+        classification = tle1_tokens[TLE.TLE1_Index.CLASSIFICATION][-1]
         intl_designator = tle1_tokens[TLE.TLE1_Index.INTL_DESIGNATOR]
         julian_year_day_fraction = tle1_tokens[TLE.TLE1_Index.EPOCH_JULIAN_YEAR_DAY_FRACTION]
         first_deriv_mean_motion = tle1_tokens[TLE.TLE1_Index.FIRST_DERIV_MEAN_MOTION]
@@ -86,6 +88,7 @@ class TLE:
         checksum1 = tle1_tokens[TLE.TLE1_Index.ELEMENT_NUM_CHECKSUM][-1]
         print(
             sat_num,
+            classification,
             intl_designator,
             julian_year_day_fraction,
             first_deriv_mean_motion,
@@ -115,7 +118,7 @@ class TLE:
             revo_num,
             checksum2)
 
-        # return cls(name,sat_num, intl_designator )
+        # return cls(name, sat_num, intl_designator )
 
 
 if __name__ == "__main__":
