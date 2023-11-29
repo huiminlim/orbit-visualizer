@@ -1,3 +1,5 @@
+# https://space.stackexchange.com/questions/25958/how-can-i-plot-a-satellites-orbit-in-3d-from-a-tle-using-python-and-skyfield
+
 import matplotlib.pyplot as plt
 import numpy as np
 from skyfield.api import Loader, EarthSatellite
