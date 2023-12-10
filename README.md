@@ -1,5 +1,15 @@
 # Orbit Visualizer
 
+## Getting Started
+
+The conda environment can be recreated with the following command:
+
+```bash
+conda env create -f environment.yml
+```
+
+To update conda libraries installed into the `environment.yml` file, use the following command.
+
 ```bash
 conda env export --from-history > environment.yml
 ```
