@@ -38,3 +38,11 @@ The angle between the line joining the perigee and the center of the Earth and t
 
 True Anomaly (θ or ν)
 The angle formed by the line joining the perigee and the center of the Earth with the line joining the satellite and the center of the Earth, in the same direction of the satellite rotation.
+
+### Two Line Elements (TLE)
+
+TLE is acdata format used to convey sets of orbital elements that describe the orbits of Earth-orbiting satellites.
+
+![TLE](https://th.bing.com/th/id/R.5edfe99a12df6e20a941cb7f177ad940?rik=9j6Xjc8aLf74dA&riu=http%3a%2f%2fwww.lesa.biz%2f_%2frsrc%2f1587441572390%2fspace-technology%2fsatellite%2forbital-elements%2fTLE.JPG&ehk=rERUVNWd%2buxNePdRagkLDcqtFJSGI5bWuTpPlgiEy6M%3d&risl=&pid=ImgRaw&r=0)
+
+We can make use of the 6 Keplerian elements to recreate the orbit of a Satellite.
