@@ -49,6 +49,18 @@ The angle between the line joining the perigee and the center of the Earth and t
 True Anomaly (θ or ν)
 The angle formed by the line joining the perigee and the center of the Earth with the line joining the satellite and the center of the Earth, in the same direction of the satellite rotation.
 
+#### Eccentricity
+
+Eccentricity describes the orbit shape, usually an ellipsoid.
+
+![Eccentricity](docs/eccentricity.png)
+
+Eccentricity (`e`) is calculated using the formula below.
+
+![Eccentricity](docs/eccentricity-2.png)
+
+ $Eccentricity, e = \frac{c}{a} = \sqrt{1 - \frac{b^2}{a^2}}$
+
 ### Two Line Elements (TLE)
 
 TLE is acdata format used to convey sets of orbital elements that describe the orbits of Earth-orbiting satellites.
