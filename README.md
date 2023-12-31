@@ -61,6 +61,12 @@ Eccentricity (`e`) is calculated using the formula below.
 
  $Eccentricity, e = \frac{c}{a} = \sqrt{1 - \frac{b^2}{a^2}}$
 
+#### Semi-major Axis
+
+Semi-major Axis describes the size of the orbit.
+
+Note: Eccentricity can be imagined as the ratio of the Semi-major and Semi-minor axis. Mant different sets can give the same eccentricity. So, the Semi-major Axis is required to determine how big the orbit is.
+
 ### Two Line Elements (TLE)
 
 TLE is acdata format used to convey sets of orbital elements that describe the orbits of Earth-orbiting satellites.
